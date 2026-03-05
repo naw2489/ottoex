@@ -1,0 +1,37 @@
+# WordPress core (we only version custom code)
+/wp-admin/
+/wp-includes/
+/wp-*.php
+!/wp-config-local.php
+/index.php
+/xmlrpc.php
+/license.txt
+/readme.html
+/.htaccess
+
+# Themes — only track enfold-child
+wp-content/themes/enfold/
+wp-content/themes/twenty*/
+wp-content/themes/*.zip
+wp-content/themes/index.php
+
+# All plugins (third-party)
+wp-content/plugins/
+
+# Uploads and DB dumps
+wp-content/uploads/
+db/
+
+# Cache and logs
+wp-content/cache/
+wp-content/wflogs/
+wp-content/debug.log
+*.log
+
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+error_log
