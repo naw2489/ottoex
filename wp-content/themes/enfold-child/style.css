@@ -1,12 +1,33 @@
 /*
-Theme Name:     Enfold-Child
-Description:    This is a child theme
-Author:         admin
-Template:       enfold
-
-(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+Theme Name: Enfold Child
+Description: A <a href='http://codex.wordpress.org/Child_Themes'>Child Theme</a> for the Enfold Wordpress Theme. If you plan to do a lot of file modifications we recommend to use this Theme instead of the original Theme. Updating will be much easier then.
+Version: 1.0
+Author: Kriesi
+Author URI: http://www.kriesi.at
+Template: enfold
 */
 
+
+.avia-revolutionslider rs-module-wrap {
+    max-width: 1310px !important;
+    margin: 0 auto !important;
+    background: transparent !important;
+}
+
+#rev_slider_1_1_wrapper {
+    background: transparent !important;
+}
+
+rs-progress,
+.tp-bannertimer,
+.rs-loader {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.avia-layerslider.avia-revolutionslider {
+    margin-bottom: 0 !important;
+}
 
 ul.inventory {
     margin: 0;
@@ -58,6 +79,45 @@ ul.inventory li:nth-child(3n+4) {
 	font-weight: bold;
 }
 
+.m_coming_soon
+{
+	position: absolute;
+	z-index: 1;
+	margin-top: 10px;
+}
+
+.m_coming_soon span
+{
+	background-color: #e8a735;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 6px 12px;
+	display: inline-block;
+}
+
+.priceCS
+{
+	background-color: #e8a735;
+	text-align: center;
+	color: white !important;
+	padding: 10px;
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.priceCS a
+{
+	color: white !important;
+}
+
+.priceCS a:hover
+{
+	color: white !important;
+	text-decoration: none;
+}
+
 .clear-float
 {
 	clear: both;
@@ -65,8 +125,8 @@ ul.inventory li:nth-child(3n+4) {
 }
 .vehicle .thumb .m_sold
 {
-	position:absolute; 
-	width:10%; 
+	position:absolute;
+	width:10%;
 	margin-top:10px;
 	height:50px;
 	background-image: url('imgs/sold.png');

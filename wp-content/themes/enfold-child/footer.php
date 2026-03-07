@@ -49,7 +49,7 @@
 							$class2 = ""; // initialized to avoid php notices
 							if($i != 1) $class2 = " el_after_{$class}  el_before_{$class}";
 							echo "<div class='flex_column {$class} {$class2} {$firstCol}'>";
-							if (function_exists('dynamic_sidebar') && dynamic_sidebar('Footer - column'.$i) ) : else : avia_dummy_widget($i); endif;
+							if (function_exists('dynamic_sidebar') && dynamic_sidebar('Footer - Column ' . $i) ) : else : avia_dummy_widget($i); endif;
 							echo "</div>";
 							$firstCol = "";
 						}

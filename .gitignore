@@ -11,12 +11,16 @@
 
 # Themes — only track enfold-child
 wp-content/themes/enfold/
+wp-content/themes/enfold-4.7.6.4-backup/
+wp-content/themes/enfold-child-backup/
 wp-content/themes/twenty*/
 wp-content/themes/*.zip
 wp-content/themes/index.php
 
 # All plugins (third-party)
 wp-content/plugins/
+
+wp-content/index.php
 
 # Uploads and DB dumps
 wp-content/uploads/

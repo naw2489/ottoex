@@ -50,8 +50,12 @@ global $avia_config;
 										echo '<div class="m_sold"></div>';
 									} 
 								elseif($avail == 'Sale Pending')
-								 { 
+								 {
 								 echo '<div class="m_pending"></div>';
+								 }
+								elseif($avail == 'Coming Soon')
+								 {
+								 echo '<div class="m_coming_soon"><span>COMING SOON</span></div>';
 								 }
 								  echo get_the_post_thumbnail();
 								 ?></a>
@@ -73,6 +77,10 @@ global $avia_config;
 								 elseif($avail == 'Sale Pending') {  echo '<div class="price pend"><a href=';
 								 the_permalink();
 								 echo '>Sale Pending: '.get_field('price').'</a></div>';
+								 }
+								 elseif($avail == 'Coming Soon') {  echo '<div class="priceCS"><a href=';
+								 the_permalink();
+								 echo '>Coming Soon</a></div>';
 								 } ?>
 								</li>
 
